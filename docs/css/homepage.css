@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#homepageBody{
+    background-image: url('../images/arkwright_tower_thmb_smoke.JPG');
+    background-size: cover;
+    background-attachment: fixed;
+    size: 100%;
+}
+
+#homeLink
+{
+    text-decoration: none;
+}
+
+#navBar{
+    width: 99.5vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5pt;
+    align-items: center;
+}
+
+#navBarMenu{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+li.navBarElement{
+    padding: calc(5px + .1vw);
+}
+
+.otherPage{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #302504;
+    border-radius: 5pt;
+    height: calc(40px + 1vw);
+}
+
+#centerText{
+    color: white;
+    text-align: center;
+}
+
+a.navBarContent{
+    color: #d6d6c2;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    padding: calc(5px + .1vw);
+    padding: 5px;
+}
+
+a.navBarContent:hover{
+    text-decoration: underline;
+    color: white;
+}
+
+h1.siteTitle{
+    color: white;
+    font-size: calc(20px + 1vw);
+    font-family: 'Squada One', cursive;
+    padding: 5px;
+    text-decoration: none;
+}
+
+img.NavBarImg{
+    width: 50px;
+    height: auto;
+}
+
+#teamSection{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    pointer-events: none;
+    
+}
+
+.row{
+    display: flex;
+    margin: 1vw;
+    justify-content: space-around;
+}
+
+.teamBox{
+    margin: .5vw;
+}
+
+.teamPic{
+    width: calc(150px + 1vw);
+    height: auto;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items:  flex-start;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-size: cover;
+    pointer-events: all;
+}
+
+.hide{
+    display: none;
+}
+
+.teamPic:hover{
+    cursor: pointer;
+}
+
+.modalClose{
+    position: absolute;
+    top: 5;
+    right: 5;
+}
+
+.modalClose:hover{
+    cursor: pointer;
+}
+
+.modalContent{
+    width: 75%;
+    height: 75%;
+    animation: .4s Grow;
+}
+
+@keyframes Grow{
+    from{opacity: 0; transform: scale(0);}
+    to{opacity: 1; transform: scale(1);}
+}
+
+.modalBody{
+    position: absolute;
+    flex: 1 1 auto;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.modalTeamPic{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    z-index: 1;
+}
