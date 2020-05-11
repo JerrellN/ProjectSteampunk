@@ -83,8 +83,6 @@ img.NavBarImg{
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-    pointer-events: none;
-    
 }
 
 .row{
@@ -100,6 +98,7 @@ img.NavBarImg{
 .teamPic{
     width: calc(150px + 1vw);
     height: auto;
+    pointer-events: auto;
 }
 
 .modal{
