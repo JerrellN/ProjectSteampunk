@@ -8,7 +8,6 @@ $(document).ready(function(){
         $("#aboutBody").css("background", "black");
     })
 })
-//Need help here ^
 
 function showModalMG()
 {
